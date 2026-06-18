@@ -33,6 +33,18 @@ The portfolio currently showcases these notable projects:
    - A project showcase platform highlighting tools like ApnaStudent and IoT Home Bridge.
    - [Live Demo](https://ashishcornelio.github.io/website) | [Source Code](https://github.com/ashishcornelio/website.git)
 
+4. **Picvert**
+   - A desktop image converter built with Python, Tkinter, and Pillow. Supports batch conversion, preview, resizing, and quality control.
+   - [Source Code](https://github.com/ashishcornelio/picvert.git)
+
+5. **Desktop-calendar**
+   - An ESP32 slideshow and RTC clock system with a web-based image converter for SD-card-ready JPEG export.
+   - [Live Demo](https://ashishcornelio.github.io/Desktop-calendar/) | [Source Code](https://github.com/ashishcornelio/Desktop-calendar.git)
+
+6. **Fun-with-ASCII**
+   - A collection of Python scripts to convert webcam, video, and images into ASCII art using OpenCV and Tkinter.
+   - [Source Code](https://github.com/ashishcornelio/fun-with-ascii.git)
+
 ## 🎨 Design Highlights
 
 - **Claymorphism**: The UI utilizes soft 3D elements, inset shadows, and floating effects (clay cards, blobs, tags).
