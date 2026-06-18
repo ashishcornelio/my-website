@@ -604,29 +604,23 @@ ul {
     color: var(--accent);
 }
 
-.footer-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-    margin-top: 24px;
-}
-
+/* Buy Me a Coffee button (yellow) */
 .btn-clay.coffee {
-    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    background: linear-gradient(135deg, #ffd54a, #ffca28);
     color: #2d2d2d;
-    box-shadow: 8px 8px 18px rgba(255, 152, 0, 0.24), -8px -8px 18px rgba(255, 255, 255, 0.7);
+    box-shadow: 8px 8px 18px rgba(255, 193, 7, 0.18), -8px -8px 18px rgba(255, 255, 255, 0.7);
     border: none;
 }
 
 .btn-clay.coffee:hover {
-    background: linear-gradient(135deg, #ffcc66, #ffd966);
+    background: linear-gradient(135deg, #ffda65, #ffc107);
+    transform: translateY(-2px);
 }
 
 .btn-clay.coffee:active {
-    box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.15), inset -4px -4px 12px rgba(255, 255, 255, 0.35);
+    box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(2px);
 }
-
 /* =========================================
      Responsive adjustments
      ========================================= */
