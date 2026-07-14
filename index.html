@@ -88,7 +88,7 @@
         <!-- Hero Section -->
         <section id="home" class="hero section">
             <div class="hero-content clay-card">
-                <h1 class="hero-title clay-text">Hi, I'm <span class="highlight">Ashish Cornelio</span></h1>
+                <h1 class="hero-title clay-text">Hi, I'm <span class="highlight-container"><span class="backdrop-text" aria-hidden="true">BlackedBoat</span><span class="highlight">Ashish Cornelio</span></span></h1>
                 <p class="hero-subtitle">A passionate developer creating stunning, interactive online experiences.
                     Welcome to my creative space.</p>
                 <div class="hero-actions">
@@ -255,6 +255,18 @@
             <p>Built with ❤️ by Ashish Cornelio.</p>
         </div>
     </footer>
+
+    <!-- SVG Wavy/Flame Displacement Filter -->
+    <svg style="display: none;">
+        <defs>
+            <filter id="flame-distortion">
+                <feTurbulence type="fractalNoise" baseFrequency="0.01 0.04" numOctaves="3" result="noise">
+                    <animate attributeName="baseFrequency" dur="8s" values="0.01 0.04; 0.015 0.07; 0.01 0.04" repeatCount="indefinite" />
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="25" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+        </defs>
+    </svg>
 
     <script src="script.js"></script>
 </body>
