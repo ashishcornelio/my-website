@@ -8,6 +8,8 @@ This website is designed with a modern, dynamic UI featuring "claymorphism" aest
 
 ### 🔗 Live Preview
 https://ashishcornelio.github.io/my-website
+<br>or<br>
+https://ashishcornelio.infinityfree.me/
 
 ## 🛠️ Built With
 
@@ -28,10 +30,6 @@ The portfolio currently showcases these notable projects:
 2. **ApnaCalendar**
    - A personalized family calendar generator for WWF format, automating layouts and photo placement into Word documents.
    - [Live Demo](http://172.235.1.42:8000) | [Source Code](https://github.com/ashishcornelio/ApnaCalendar.git)
-
-3. **SangamOne Connected Services**
-   - A project showcase platform highlighting tools like ApnaStudent and IoT Home Bridge.
-   - [Live Demo](https://ashishcornelio.github.io/website) | [Source Code](https://github.com/ashishcornelio/website.git)
 
 4. **Picvert**
    - A desktop image converter built with Python, Tkinter, and Pillow. Supports batch conversion, preview, resizing, and quality control.

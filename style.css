@@ -44,7 +44,7 @@ html {
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit', Arial;
     background-color: var(--bg-color);
     color: var(--text-color);
     min-height: 100vh;
@@ -285,14 +285,16 @@ body {
 /* Animated Logo Loop (Infinite Marquee) */
 .logo-loop-wrapper {
     margin: 120px auto 40px;
-    max-width: 900px;
-    padding: 0 20px;
+    width: min(100%, 1200px);
+    max-width: 1200px;
+    padding: 0;
 }
 
 .logo-loop-container {
     overflow: hidden;
     padding: 24px 0;
     position: relative;
+    border-radius: 28px;
 }
 
 .logo-loop-container::before,
@@ -320,6 +322,9 @@ body {
     display: flex;
     width: max-content;
     animation: marquee-scroll 20s linear infinite;
+    will-change: transform; 
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden; 
 }
 
 .logo-loop-track:hover {
@@ -331,6 +336,7 @@ body {
     align-items: center;
     gap: 70px;
     padding: 0 35px;
+    flex-shrink: 0; 
 }
 
 .logo-set a {
@@ -358,9 +364,9 @@ body {
 
 /* Main Content Layout */
 main {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 8px 20px 0;
 }
 
 /* Highlight container for name backdrop positioning */
@@ -386,10 +392,9 @@ main {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -2px;
-    z-index: 1; /* Sits between card background and foreground title */
+    z-index: 1; 
     pointer-events: none;
     
-    /* Text color gradient: White top core, fading down into red flames/smoke */
     background: linear-gradient(to bottom, 
         #ffffff 0%, 
         #ff3366 35%, 
@@ -399,7 +404,6 @@ main {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    /* Glowing/displacement effect mimicking the "FADE" image */
     filter: url(#flame-distortion) blur(1px);
     opacity: 0.75;
     
@@ -501,14 +505,14 @@ main {
 
 /* Floating Morphing Clay Blob visual */
 .clay-blob {
-    width: 280px;
-    height: 280px;
-    background: linear-gradient(135deg, #4f46e5 0%, #db2777 100%);
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle at top left, #7c3aed 0%, #db2777 55%, #2563eb 100%);
+    border-radius: 50%;
     box-shadow: 
-        15px 15px 30px rgba(0, 0, 0, 0.5),
-        inset 10px 10px 20px rgba(255, 255, 255, 0.15),
-        inset -10px -10px 20px rgba(0, 0, 0, 0.5);
+        0 25px 80px rgba(109, 40, 217, 0.34),
+        inset 10px 10px 26px rgba(255, 255, 255, 0.12),
+        inset -10px -10px 25px rgba(0, 0, 0, 0.35);
     position: relative;
     display: flex;
     align-items: center;
@@ -671,6 +675,7 @@ main {
 
 /* Footer Section */
 .footer {
+    width: min(90%, 1200px);
     max-width: 1200px;
     margin: 80px auto 40px;
     padding: 60px 40px 30px;
@@ -747,6 +752,18 @@ main {
     
     .logo-loop-wrapper {
         margin-top: 180px;
+    }
+
+    /* Reduce the gradient fade width on mobile */
+    .logo-loop-container::before,
+    .logo-loop-container::after {
+        width: 30px; 
+    }
+
+    /* Slightly reduce the gap so the loop looks natural on a smaller screen */
+    .logo-set {
+        gap: 40px; 
+        padding: 0 20px;
     }
 
     .hero {
