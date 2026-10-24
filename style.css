@@ -369,68 +369,12 @@ main {
     padding: 8px 20px 0;
 }
 
-/* Highlight container for name backdrop positioning */
-.highlight-container {
-    position: relative;
-    display: inline-block;
-}
-
 .hero-title {
     position: relative;
     z-index: 2;
     font-size: 3.2rem;
     line-height: 1.25;
     margin-bottom: 0;
-}
-
-.backdrop-text {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3.2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-    z-index: 1; 
-    pointer-events: none;
-    
-    background: linear-gradient(to bottom, 
-        #ffffff 0%, 
-        #ff3366 35%, 
-        #be123c 65%, 
-        transparent 95%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-    filter: url(#flame-distortion) blur(1px);
-    opacity: 0.75;
-    
-    text-shadow: 
-        0 0 10px rgba(225, 29, 72, 0.5),
-        0 0 20px rgba(225, 29, 72, 0.3),
-        0 0 40px rgba(225, 29, 72, 0.15);
-        
-    animation: flame-flicker 6s ease-in-out infinite alternate;
-}
-
-@keyframes flame-flicker {
-    0% {
-        opacity: 0.7;
-        transform: translate(-50%, -50%) scale(1) skewX(-1deg);
-        filter: url(#flame-distortion) blur(0.8px) drop-shadow(0 0 6px rgba(225, 29, 72, 0.4));
-    }
-    50% {
-        opacity: 0.85;
-        transform: translate(-50%, -52%) scale(1.02) skewX(1deg);
-        filter: url(#flame-distortion) blur(1.2px) drop-shadow(0 0 14px rgba(225, 29, 72, 0.75));
-    }
-    100% {
-        opacity: 0.75;
-        transform: translate(-50%, -49%) scale(0.99) skewX(-0.5deg);
-        filter: url(#flame-distortion) blur(0.9px) drop-shadow(0 0 8px rgba(225, 29, 72, 0.5));
-    }
 }
 
 /* Hero Section */
@@ -718,9 +662,6 @@ main {
     .hero-title {
         font-size: 2.8rem;
     }
-    .backdrop-text {
-        font-size: 2.8rem;
-    }
     .clay-blob {
         width: 240px;
         height: 240px;
@@ -779,10 +720,6 @@ main {
 
     .hero-title {
         font-size: 2.3rem;
-    }
-
-    .backdrop-text {
-        font-size: 2.2rem;
     }
 
     .hero-subtitle {
